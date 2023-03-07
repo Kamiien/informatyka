@@ -1,8 +1,0 @@
-Cowboy ma stado 50 bizonów i 2 hektary łąki porośniętej trawą 90%.
-Każdego dnia wypasa bizony, a każdy z nich dziennie zjada 2m2 kwadratowe a odrasta 90m2.
-
-1. Po ilu dniach zabraknie trawy na łące
-2. Ile maksymalnie bizonów może mieć cowboy aby przy wypasie za wyjątkiem niedziel trawy wystarczyło na rok (365 dni)
-
-1. Zabraknie 1800 dnia
-2. 81 bizonów
