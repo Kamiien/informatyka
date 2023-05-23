@@ -23,14 +23,14 @@ for l in file:
     arr = l.split()
     dane.append((int(arr[0]), int(arr[1])))
 
-nwds = []
+gnwd = 0
 print("NWD:")
 for d in dane:
     n = nwd(d[0], d[1])
-    nwds.append(n)
+    if n > gnwd:
+        gnwd = n
     print(f"A: {d[0]} B: {d[1]} NWD: {n}")
-nwds.sort()
-print(f"Największe NWD: {nwds[-1]}")
+print(f"Największe NWD: {gnwd}")
 
 gpn = 0
 for x in dane:
