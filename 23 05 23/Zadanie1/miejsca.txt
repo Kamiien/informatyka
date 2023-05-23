@@ -1,0 +1,11 @@
+PL Poznan 20 80
+PL Wroclaw 20 80
+DE Berlin 30 50
+DE Bonn 30 20
+PL Gdansk 10 40
+PL Gdynia 20 80
+PL Krotoszyn 20 80
+DE Bonn 30 50
+DE Braunszwajg 30 20
+PL Godziesze 10 40
+
