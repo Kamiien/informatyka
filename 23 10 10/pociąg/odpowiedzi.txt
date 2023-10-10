@@ -1,0 +1,48 @@
+5.1
+nr_skladu	nazwa
+107		Berolina
+110		Hetman
+5.2
+nr_biletu	ilosc	nr_przejazdu
+2006		10	504
+2013		2	504
+2011		2	504
+2008		1	504
+5.3
+lokomotywa
+EP-07
+EP-09
+Husarz
+Pendolino
+5.4
+nr_przejazdu	Wyr1
+503		540
+501		540
+504		480
+509		360
+506		240
+502		207
+505		32
+5.5
+stacja_pocz		SumaOfilosc
+Konin			15
+Warszawa Wschodnia	6
+Katowice		4
+Gdynia			3
+Poznan			1
+5.6
+najkrótszy: 504
+najdłuższy: 503
+5.7
+nr_przejazdu
+507
+508
+510
+lokomotywa	PoliczOfnr_skladu	data
+EP-09		2		18.07.2022
+EP-09		2		16.07.2022
+EP-09		2		15.07.2022
+Husarz		1		15.07.2022
+EP-09		1		17.07.2022
+EP-07		1		18.07.2022
+EP-07		1		17.07.2022
