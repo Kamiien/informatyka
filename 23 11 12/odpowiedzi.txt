@@ -1,0 +1,76 @@
+1.
+SELECT sprzet.marka
+FROM sprzet
+GROUP BY sprzet.marka;
+2.
+SELECT rok_produkcji, count(*)
+FROM sprzet
+GROUP BY rok_produkcji
+ORDER BY rok_produkcji DESC;
+3.
+SELECT sprzet.id_sprzetu, sum(koszt_na_dzien * (data_do - data_od + 1)) AS suma
+FROM sprzet INNER JOIN wypozyczenia ON sprzet.id_sprzetu = wypozyczenia.id_sprzetu
+GROUP BY sprzet.id_sprzetu
+ORDER BY sum(koszt_na_dzien * (data_do - data_od + 1)) DESC;
+4.
+SELECT id_sprzetu, nazwa
+FROM sprzet
+WHERE id_sprzetu not in (SELECT id_sprzetu FROM wypozyczenia);
+5.
+SELECT pesel, nazwa
+FROM sprzet INNER JOIN wypozyczenia ON sprzet.id_sprzetu = wypozyczenia.id_sprzetu
+WHERE (((data_od) BETWEEN #11/01/2022# and #11/30/2022#) AND ((data_do) BETWEEN #11/01/2022# and #11/30/2022#));
+6.
+SELECT data_od, count(id_sprzetu) AS [count]
+FROM wypozyczenia
+GROUP BY data_od
+ORDER BY count(id_sprzetu) DESC;
+7.
+SELECT nazwa
+FROM sprzet
+WHERE moc > (select avg(moc) from sprzet);
+8.
+SELECT sprzet.id_sprzetu, nazwa
+FROM sprzet INNER JOIN wypozyczenia ON sprzet.id_sprzetu = wypozyczenia.id_sprzetu
+WHERE kaucja >= 100
+GROUP BY sprzet.id_sprzetu, nazwa
+HAVING count(id_wypozyczenia) >= 2;
+9.
+SELECT count(*)
+FROM sprzet
+WHERE nazwa like "*wiertarka*";
+10.
+SELECT pesel, count(id_wypozyczenia)
+FROM wypozyczenia
+GROUP BY pesel
+ORDER BY count(id_wypozyczenia) DESC;
+11.
+SELECT sprzet.id_sprzetu, nazwa, kaucja
+FROM sprzet INNER JOIN wypozyczenia ON sprzet.id_sprzetu = wypozyczenia.id_sprzetu
+GROUP BY sprzet.id_sprzetu, nazwa, kaucja;
+12.
+SELECT marka, id_sprzetu, nazwa
+FROM sprzet
+WHERE moc >= 1000 and spalinowy=TRUE
+GROUP BY marka, id_sprzetu, nazwa;
+13.
+SELECT data_od
+FROM wypozyczenia
+WHERE pesel like "?????????0?" or pesel like "?????????2?" or pesel like "?????????4?" or pesel like "?????????6?" or pesel like "?????????8?";
+14.
+SELECT DISTINCT id_sprzetu
+FROM wypozyczenia
+WHERE koszt_na_dzien > kaucja;
+15.
+SELECT nazwa, marka, data_od
+FROM sprzet INNER JOIN wypozyczenia ON sprzet.id_sprzetu = wypozyczenia.id_sprzetu
+ORDER BY data_od DESC;
+16.
+SELECT count(id_wypozyczenia)
+FROM wypozyczenia
+WHERE data_od = data_do;
+17.
+SELECT nazwa, marka, moc
+FROM sprzet
+WHERE spalinowy=true
+ORDER BY moc DESC;
