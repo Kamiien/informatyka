@@ -1,0 +1,31 @@
+5.1
+Mateusz	Tokarczyk	9
+5.2
+Anna	Poplawska	2220
+Marcin	Bober		2240
+Mateusz	Slomka		2220
+5.3
+104
+107
+109
+110
+114
+117
+207
+215
+306
+310
+314
+402
+411
+415
+416
+418
+5.4
+SELECT rodzaj, count(*)
+FROM uslugi_dodatkowe
+GROUP BY rodzaj;
+5.5
+SELECT klienci.imie, klienci.nazwisko, sum(uslugi_dodatkowe.cena_uslugi)
+FROM (klienci INNER JOIN Noclegi ON klienci.nr_dowodu = Noclegi.nr_dowodu) INNER JOIN uslugi_dodatkowe ON Noclegi.id_pobytu = uslugi_dodatkowe.id_pobytu
+GROUP BY klienci.imie, klienci.nazwisko;
