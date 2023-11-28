@@ -1,0 +1,4 @@
+1. podać ilość zamówień dla każdego kontrakenta
+2. podać ilość niezrealizowanych zamówień z 2023 roku i nazwę kontrakenta
+3. podać w której miejscowości są zamówienia o największej wartości
+4. podać w kolejności malejącej liczbę pracowników w każdej miejscowości
