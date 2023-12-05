@@ -1,0 +1,23 @@
+zad 6.1
+Rok	GrandPrix	sum
+2010	Australia	18
+zad 6.2
+GrandPrix	Expr1001
+Indie		2
+zad 6.3
+Imie		Nazwisko	Rok	SumaOfPunkty
+Sebastian	Vettel		2012	281
+Fernando	Alonso		2006	134
+Michael		Schumacher	2000	108
+zad 6.4
+kraj		Expr1001
+Australia	2
+Brazylia	2
+Finlandia	1
+Francja		2
+Hiszpania	1
+Japonia		1
+Meksyk		1
+Niemcy		4
+Wenezuela	1
+Wielka Brytania	3
