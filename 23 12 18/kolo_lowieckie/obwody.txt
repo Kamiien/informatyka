@@ -1,0 +1,4 @@
+1; pod lasem;132
+2;przy schronisku;25
+3;polana;345
+4;bukowisko;380
