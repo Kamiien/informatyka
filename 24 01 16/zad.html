@@ -1,7 +1,20 @@
 <!DOCTYPE html>
 <html>
     <head>
-
+        <style>
+            td {
+                padding: 5px;
+                border-color: blue;
+                border-style: dashed;
+                font-family: 'Courier New', Courier, monospace;
+                background-image: url('https://c.tenor.com/Ga6MoorAM5IAAAAC/tenor.gif');
+                background-size: 150px;
+                color:white;
+            }
+            .redbutton {
+                background-color: red;
+            }
+        </style>
     </head>
     <body>
         <table border="1">
@@ -27,6 +40,26 @@
                     turystyka: <input type="checkbox" name="" id=""><br>
                 </td>
             </tr>
+            
+            <tr>
+                <td>
+                    <select>
+                        <option>wybierz</option>
+                        <option>Poznań</option>
+                        <option>Wrocław</option>
+                        <option>Katowice</option>
+                    </select>
+                </td>
+                <td>
+                    <select size="5" multiple>
+                        <option>Gdynia</option>
+                        <option>Poznań</option>
+                        <option>Wrocław</option>
+                        <option>Katowice</option>
+                        <option>Kalisz</option>
+                    </select>
+                </td>
+            </tr>
             <tr>
                 <td>
                     miejscowość
@@ -35,7 +68,7 @@
                     <input type="radio" name="miejscowosc" value="małe miasto">małe miasto<br>
                     <input type="radio" name="miejscowosc" value="miasto">miasto<br>
                 </td>
-                <td><input type="submit" value="Wyślij"></td>
+                <td><input type="submit" value="Wyślij" class="redbutton"></td>
             </tr>
         </table>
     </body>
