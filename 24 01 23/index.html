@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <style>
+      #data {
+        position: absolute;
+        top: 100px;
+        right: 100px;
+      }
+    </style>
+  </head>
+  <body>
+    <select name="rok">
+      <script>
+        for (var i = 2024; i >= 2018; i--) {
+          document.writeln(`<option>${i}</option>`);
+        }
+      </script>
+    </select>
+    <select name="miesiac">
+      <script>
+        for (var i = 1; i <= 12; i++) {
+          document.writeln(`<option>${i}</option>`);
+        }
+      </script>
+    </select>
+    <select name="dzien">
+      <script>
+        for (var i = 1; i <= 31; i++) {
+          document.writeln(`<option>${i}</option>`);
+        }
+      </script>
+    </select>
+    <div id="data">
+      dziś mamy:
+      <script>
+        let data = new Date();
+        let d = data.toLocaleDateString("pl-PL", { weekday: "long" });
+        let m = data.toLocaleDateString("pl-PL", { month: "long" });
+        let dzien = data.getDate();
+        let miesiac = data.getMonth() + 1;
+        let rok = data.getFullYear();
+        document.writeln(`${d} ${dzien} ${m} ${rok}`);
+      </script>
+      <span id="czas"></span>
+    </div>
+    <script>
+      var timeDisplay = document.getElementById("czas");
+
+      function czas() {
+        let czas = new Date().toLocaleString("pl-PL", {
+          timeZone: "Europe/Warsaw",
+        });
+        timeDisplay.innerHTML = czas;
+      }
+
+      setInterval(czas, 1000);
+    </script>
+  </body>
+</html>
