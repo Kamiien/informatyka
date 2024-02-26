@@ -1,42 +1,45 @@
 <!DOCTYPE html>
 <html>
-    <head>
-        <style>
-            #header {
-                position:absolute;
-                background: #aaccbb;
-                height: 100px;
-                width: 100%;
-            }
-            #nav {
-                background: #aaccbb;
-                height: 500px;
-                width: 30%;
-                float: left;
-            }
-            #content {
-                background: #aacc22;
-                height: 500px;
-                width: 70%;
-                float: left;
-            }
-            #footer {
-                background: #44cc22;
-                height: 50px;
-                width: 100%;
-                clear: both;
-            }
-        </style>
-    </head>
-    <body>
-        <div id="header">
-            <center><h1>Moja strona</h1></center>
-       </div>
-       <div id="nav"><p>Menu</p></div>
-       <div id="content">
-        <p>Coming Soon</p>
-            <img src="https://c.tenor.com/Ga6MoorAM5IAAAAC/tenor.gif" width="100px" height="100px">
+  <head>
+    <style>
+      #header {
+        background: #aaccbb;
+        width: 100%;
+      }
+      #nav {
+        background: #aaccbb;
+        height: 500px;
+        width: 30%;
+        float: left;
+      }
+      #content {
+        background: #aacc22;
+        height: 500px;
+        width: 70%;
+        float: left;
+      }
+      #footer {
+        background: #44cc22;
+        height: 50px;
+        width: 100%;
+        clear: both;
+      }
+    </style>
+  </head>
+  <body>
+    <div style="display: flex; flex-direction: column">
+      <div id="header">
+        <center><h1>Moja strona</h1></center>
+      </div>
+      <div style="display: flex; flex-direction: row">
+        <div id="nav"><p>Menu</p></div>
+        <div id="content">
+          <p>Coming Soon</p>
+          <img src="https://c.tenor.com/Ga6MoorAM5IAAAAC/tenor.gif" width="100px" height="100px" />
         </div>
-       <div id="footer"><p>stopka</p></div>
-    </body>
+      </div>
+
+      <div id="footer"><p>stopka</p></div>
+    </div>
+  </body>
 </html>
