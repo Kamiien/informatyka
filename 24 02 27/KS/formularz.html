@@ -12,6 +12,11 @@
         var n = document.getElementById("p1").value;
         document.getElementById("p2").value = silnia(n);
       }
+
+      function fibonacci(n) {
+        if (n<2) return n;
+        return fibonacci(n - 1) + fibonacci(n - 2);
+      }
     </script>
   </head>
   <body>
