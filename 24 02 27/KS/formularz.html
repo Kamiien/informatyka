@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <title>Silnia</title>
+    <script>
+      function silnia(n) {
+        if (n == 1) return 1;
+        return silnia(n - 1) * n;
+      }
+    </script>
+  </head>
+  <body>
+    <form>
+      silnia <button>oblicz</button>
+      <br />
+      <input />
+      =
+      <input />
+    </form>
+    <script>
+      document.writeln(silnia(5));
+      document.writeln(silnia(6));
+    </script>
+  </body>
+</html>
