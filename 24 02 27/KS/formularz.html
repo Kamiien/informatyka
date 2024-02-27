@@ -7,19 +7,20 @@
         if (n == 1) return 1;
         return silnia(n - 1) * n;
       }
+
+      function oblicz() {
+        var n = document.getElementById("p1").value;
+        document.getElementById("p2").value = silnia(n);
+      }
     </script>
   </head>
   <body>
-    <form>
-      silnia <button>oblicz</button>
+    <form action="">
+      silnia <input onclick="oblicz()" type="button" value="oblicz"></input>
       <br />
-      <input />
+      <input id="p1" />
       =
-      <input />
+      <input id="p2" />
     </form>
-    <script>
-      document.writeln(silnia(5));
-      document.writeln(silnia(6));
-    </script>
   </body>
 </html>

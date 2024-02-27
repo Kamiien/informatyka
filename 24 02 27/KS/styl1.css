@@ -1,12 +1,19 @@
 body {
-    background-color:lightblue;
+  background-color: lightblue;
 }
 .foto {
-    position: absolute;
-    right: 150px;
-    top: 250px;
+  position: absolute;
+  right: 150px;
+  top: 250px;
 }
 @keyframes rotate {
-    0% { transform: rotate(0deg);}
-    100% { transform: rotate(360deg); }
+  0% {
+    transform: rotate(0deg);
+  }
+  90% {
+    transform: rotate(1440deg);
+  }
+  100% {
+    transform: rotate(1440deg);
+  }
 }
