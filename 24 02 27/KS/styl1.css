@@ -1,3 +1,8 @@
 body {
     background-color:lightblue;
 }
+.photo {
+    position: absolute;
+    right: 50px;
+    top: 50px;
+}
