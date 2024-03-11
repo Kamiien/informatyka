@@ -1,0 +1,18 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <script>
+      function zamien() {
+        let p1 = document.getElementById("p1").value;
+        let p2 = document.getElementById("p2").value;
+        document.getElementById("p1").value = p2;
+        document.getElementById("p2").value = p1;
+      }
+    </script>
+  </head>
+  <body>
+    <input type="text" id="p1" />
+    <button onclick="zamien()">Zamien</button>
+    <input type="text" id="p2" />
+  </body>
+</html>

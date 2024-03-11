@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <script>
+      function fib(n) {
+        t = Array();
+        t[0] = 1;
+        t[1] = 1;
+        for (var i = 2; i <= n; i++) {
+          t[i] = t[i - 1] + t[i - 2];
+        }
+        return t[n];
+      }
+      function fun1() {
+        let x = document.getElementById("p1").value;
+        x = parseFloat(x);
+        alert(fib(x));
+      }
+    </script>
+  </head>
+  <body>
+    <input type="text" id="p1" />
+    <button onclick="fun1()">Ok</button>
+  </body>
+</html>
