@@ -1,0 +1,76 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<style>
+			.back {
+				position: absolute;
+				top: 0;
+				left: 0;
+				width: 100%;
+				height: 100%;
+				overflow: hidden;
+				filter: saturate(1.5) brightness(0.8);
+			}
+			
+			.main-img {
+				position: absolute;
+				width: 200%;
+				animation: rotate 35s linear infinite;
+				filter: blur(40px);
+				border-radius: 100em;
+				right: 0;
+				top: 0;
+				z-index: 10;
+			}
+			
+			.back-img {
+				position: absolute;
+				width: 200%;
+				animation: rotate 35s linear infinite;
+				filter: blur(40px);
+				border-radius: 100em;
+				left: 0;
+				bottom: 0;
+				z-index: 1;
+				animation-direction: reverse;
+			}
+			
+			.center-img {
+				position: absolute;
+				width: 300%;
+				animation: rotate 35s linear infinite;
+				filter: blur(40px);
+				border-radius: 100em;
+				z-index: 0;
+				right: -50%;
+				top: -20%;
+				animation-direction: reverse;
+			}
+			
+			@keyframes rotate {
+			0% {
+				transform: rotate(0deg);
+			}
+
+			100% {
+				transform: rotate(360deg);
+			}
+		</style>
+	</head>
+	<body>
+		<div class="back">
+			<img src="https://m.media-amazon.com/images/I/81vqCvM2EJL.jpg" class="main-img">
+			<img src="https://m.media-amazon.com/images/I/81vqCvM2EJL.jpg" class="back-img">
+			<img src="https://m.media-amazon.com/images/I/81vqCvM2EJL.jpg" class="center-img">
+		</div>
+		<div style="position: absolute; z-index: 10; width: 100%; height: 100%;">
+			<div style="display: flex; justify-content: center;">
+				<div style="display: flex; flex-direction: column;">
+					<img src="https://m.media-amazon.com/images/I/81vqCvM2EJL.jpg" width=500px style="border-radius: 40px; margin-top: 10px">
+					<span style="font-family: Calibri; color: white; margin-top: 10px; font-weight: bold; font-size: 30px">Ghost Town</span>
+					<audio controls src="https://s3.krakenfiles.com/uploads/04-12-2023/d5ZUI7sXkq/music.m4a" style="margin-top: 10px">
+				</div>
+			</div>
+		</div>
+	</body>
+</html>
